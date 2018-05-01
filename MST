@@ -1,0 +1,10 @@
+from Prims import Prims
+from Graph import Kruskals
+
+def MST(textfile, method = 'Prims', cost = False):
+         if method == 'Prims':
+             return Prims(textfile, cost)
+         if method == 'Kruskals':
+             return importfile(textfile).Kruskals(cost)
+         
+MST('Text.txt', method = 'Prims', cost = False)
